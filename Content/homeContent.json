@@ -1,0 +1,28 @@
+{
+    "carousel": [
+        {
+            "heading": "DISCOVER",
+            "url": "https://imgur.com/a/k8yXUDf",
+            "carouselCta": {
+                "linkText": "Choose Room",
+                "link": "/choose-room"
+            }
+        },
+        {
+            "heading": "DIVINE",
+            "url": "https://imgur.com/a/p3M2FDg",
+            "carouselCta": {
+                "linkText": "Choose Room",
+                "link": "/choose-room"
+            }
+        },
+        {
+            "heading": "PARADISE",
+            "url": "https://imgur.com/a/p3M2FDg",
+            "carouselCta": {
+                "linkText": "Explore more",
+                "link": "/Expore"
+            }
+        }
+    ]
+}
