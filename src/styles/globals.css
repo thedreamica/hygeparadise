@@ -1,4 +1,44 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#Next-arrow {
+  /* position: absolute; */
+  width: 55.5px;
+  height: 17.76px;
+  right: 70px;
+  z-index: 3;
+  position: absolute !important;
+  width: 18.5px;
+  height: 17.76px;
+  margin-top: 130px;
+  color: white !important;
+}
+
+#Prev-arrow {
+  position: absolute !important;
+  width: 18.5px;
+  height: 17.76px;
+
+  left: 1316px;
+  z-index: 3;
+  margin-top: 130px;
+  margin-right: 69px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #Next-arrow {
+    /* margin-top: 550px; */
+    margin-top: 500px;
+    right: 45px;   
   }
+
+  #Prev-arrow {
+    margin-top: 500px;
+    /* margin-top: 0px; */
+    left: 250px;
+    margin-left: 10px;
+  }
+}

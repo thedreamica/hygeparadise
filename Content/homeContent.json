@@ -2,27 +2,81 @@
     "carousel": [
         {
             "heading": "DISCOVER",
-            "url": "https://imgur.com/a/k8yXUDf",
+            "url": {
+                "desktopImage": "https://i.imgur.com/xVDuqFK_d.webp?maxwidth=760&fidelity=grand",
+                "mobileImageUrl": "https://i.imgur.com/QT7qtdM_d.webp?maxwidth=760&fidelity=grand"
+            },
             "carouselCta": {
                 "linkText": "Choose Room",
                 "link": "/choose-room"
-            }
+            },
+            "bottomHeading": "Enchanted Facilities",
+            "bottomContent": [
+                {
+                    "subTitle": "Magical Cafetaria",
+                    "description": "Indulge in delightful treats, surrounded by whimsical decor, creating an tunforgetable magical experience."
+                },
+                {
+                    "subTitle": "Euphoric Air Conditioning",
+                    "description": "Experience euphoric comfort with our divine air conditioning. Pure bliss for all seasons."
+                },
+                {
+                    "subTitle": "Purifying Plunge",
+                    "description": "Embark on a purifying plunge for your cherished garments at our divine laundry service."
+                }
+            ]
         },
         {
             "heading": "DIVINE",
-            "url": "https://imgur.com/a/p3M2FDg",
+            "url": {
+                "desktopImage": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+                "mobileImageUrl": "https://i.imgur.com/QT7qtdM_d.webp?maxwidth=760&fidelity=grand"
+            },
             "carouselCta": {
                 "linkText": "Choose Room",
                 "link": "/choose-room"
-            }
+            },
+            "bottomHeading": "Enchanting Facilities",
+            "bottomContent": [
+                {
+                    "subTitle": "24*7  Blissful Service",
+                    "description": "Indulge in unparalleled hospitality, pampering and serenity for an ethereal stay."
+                },
+                {
+                    "subTitle": "Utopian Free Parking",
+                    "description": "Discover heavenly convenience with our utopian free parking ensuring peace of mind."
+                },
+                {
+                    "subTitle": "ATM & CCTV",
+                    "description": "Our premises have ATM facility within it and the whole premise is guarded by CCTV camera 24*7 ensruing safety and securtiy."
+                }
+            ]
         },
         {
             "heading": "PARADISE",
-            "url": "https://imgur.com/a/p3M2FDg",
+            "url": {
+                "desktopImage": "https://i.imgur.com/uIveSfH_d.webp?maxwidth=760&fidelity=grand",
+                "mobileImageUrl": "https://i.imgur.com/QT7qtdM_d.webp?maxwidth=760&fidelity=grand"
+            },
             "carouselCta": {
                 "linkText": "Explore more",
-                "link": "/Expore"
-            }
+                "link": "/explore"
+            },
+            "bottomHeading": "Enchanted Facilities",
+            "bottomContent": [
+                {
+                    "subTitle": "Magical Cafetaria",
+                    "description": "Indulge in delightful treats, surrounded by whimsical decor, creating an tunforgetable magical experience."
+                },
+                {
+                    "subTitle": "Euphoric Air Conditioning",
+                    "description": "Experience euphoric comfort with our divine air conditioning. Pure bliss for all seasons."
+                },
+                {
+                    "subTitle": "Purifying Plunge",
+                    "description": "Embark on a purifying plunge for your cherished garments at our divine laundry service."
+                }
+            ]
         }
     ]
 }

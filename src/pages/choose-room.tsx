@@ -1,23 +1,23 @@
-import Carousel from '../Components/Carousel/Carousel'
+import ChooseRoomContainer from '../Containers/ChooseRoom/ChooseRoomContainer';
 import fsPromises from 'fs/promises';
-import '../styles/Home.module.css'
 import path from 'path';
 import React from 'react';
-interface HomeProps {
+
+interface ChooseRoomPageProps {
   props: any;
 }
-const Home: React.FC<HomeProps> = (props) => {
+const ChooseRoomPage: React.FC<ChooseRoomPageProps> = (props) => {
 
   return (
     <>
-      <Carousel {...props} />
+    <ChooseRoomContainer/>
     </>
   )
 }
 
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), '/Content/HomeContent.json');
+  const filePath = path.join(process.cwd(), '/Content/chooseRoomContent.json');
   const jsonData: any = await fsPromises.readFile(filePath);
   const pageData = JSON.parse(jsonData);
 
@@ -26,4 +26,4 @@ export async function getStaticProps() {
   }
 }
 
-export default Home
+export default ChooseRoomPage

@@ -2,13 +2,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   inactiveButton: {
+   
     backgroundColor: 'transparent',
     color: 'white',
     border: '1px solid #fff',
     borderRadius: '50%',
     width: 10,
     height: 10,
-    margin: '1 1px',
+    margin: '0 10px',
     '&:hover': {
       backgroundColor: '#fff',
     },
@@ -22,8 +23,7 @@ const CustomCarouselIndicator = ({ props }: any) => {
 
   return (
     <button
-      className={classes.inactiveButton
-      }
+      className={classes.inactiveButton}
       {...props}
     />
   );

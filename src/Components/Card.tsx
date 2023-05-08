@@ -38,7 +38,7 @@ const ImageCard = ({props}: any) => {
         style={{ backgroundImage: `url('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e')` }}
       >
         <div className={classes.overlay}>
-          <Typography variant="h1" markdown={props.heading}/>
+          <Typography variant="h1" markdown={props.heading} color='white'/>
          
           <Button >{props.carouselCta.linkText}</Button>
         </div>

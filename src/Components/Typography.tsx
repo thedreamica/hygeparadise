@@ -1,4 +1,3 @@
-
 import {
     createTheme,
     responsiveFontSizes,
@@ -9,6 +8,7 @@ import Typography from '@mui/material/Typography';
 interface TypographyProps {
     markdown: string;
     variant: any;
+    color: string;
   }
 
 let theme = createTheme();
@@ -17,10 +17,10 @@ theme = responsiveFontSizes(theme);
 // please refer to the material ui doc for the variants
 //  https://mui.com/material-ui/customization/typography/
 
-const TypographyMicro: React.FC<TypographyProps> = ({ markdown, variant }) => {
+const CustomTypography: React.FC<TypographyProps> = ({ markdown, variant, color= 'inherit' }) => {
     return (
             <ThemeProvider theme={theme}>
-                <Typography variant={variant}>
+                <Typography variant={variant} color={color}>
                     {markdown}
                 </Typography>
             </ThemeProvider>
@@ -28,4 +28,4 @@ const TypographyMicro: React.FC<TypographyProps> = ({ markdown, variant }) => {
 }
 
 
-export default TypographyMicro
+export default CustomTypography
