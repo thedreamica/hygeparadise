@@ -1,14 +1,14 @@
 import React from 'react';
 import { Card } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import TitlebarImageList from '../../Components/RoomCard'
+import ImageList from '../../Components/RoomCard'
 
 import { Typography } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: '100%',
-        height: '100vh',
+        height: '100%',
         position: 'relative',
         borderRadius: '0px',
 
@@ -17,8 +17,6 @@ const useStyles = makeStyles({
         height: '100vh',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-
-
     },
     overlay: {
         backgroundColor: 'tranparent',
@@ -26,12 +24,38 @@ const useStyles = makeStyles({
         height: '100vh',
         color: 'white',
         background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 15.31%, rgba(0, 0, 0, 0.5) 100%)',
-        // backgroundColor: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.5) 15.31%, rgba(0, 0, 0, 0.5) 100%)',
+    },
+    
+
+
+    heading: {
+        paddingTop: '150px',
+        textAlign: 'center',
+        marginleft: 'auto',
+        marginRight: 'auto',
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontSize: '40px',
+        lineHeight: '60px',
+        letterSpacing: '0.275em',
+        textShadow: '0px 4px 4px rgba(0, 0, 0, 0.13)',
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: '112px',
+            fontSize: '20px',
+            height: '35px'
+          }
+    },
+
+    list: {
+        marginTop: '150px',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '50px'
+          }
     }
 
-});
+}));
 
-const ImageCard = ({ props }: any) => {
+const ImageCard = ({ heading }: any) => {
 
     const classes = useStyles();
 
@@ -39,14 +63,16 @@ const ImageCard = ({ props }: any) => {
         <Card className={classes.root}>
             <div
                 className={classes.media}
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1551963831-b3b1ca40c98e')` }}
+                style={{ backgroundImage: `url('https://i.imgur.com/tSI532Z_d.webp?maxwidth=760&fidelity=grand')` }}
             >
                 <div className={classes.overlay}>
-                    <Typography variant="h1" >
-                        propsss.heading
+                    <Typography variant="h1" className={classes.heading} >
+                        {heading}
                     </Typography>
-                    <TitlebarImageList/>
-                    {/* <Button >{props.carouselCta.linkText}</Button> */}
+                    <div className={classes.list}>
+                    < ImageList />
+                    </div>
+                    
                 </div>
             </div>
         </Card>

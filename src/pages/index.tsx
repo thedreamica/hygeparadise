@@ -1,6 +1,5 @@
 import Carousel from '../Components/Carousel/Carousel'
 import fsPromises from 'fs/promises';
-import '../styles/Home.module.css'
 import path from 'path';
 import React from 'react';
 interface HomeProps {

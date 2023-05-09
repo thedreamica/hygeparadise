@@ -7,10 +7,11 @@ interface ChooseRoomPageProps {
   props: any;
 }
 const ChooseRoomPage: React.FC<ChooseRoomPageProps> = (props) => {
+console.log('this is page', props);
 
   return (
     <>
-    <ChooseRoomContainer/>
+    <ChooseRoomContainer {...props}/>
     </>
   )
 }
