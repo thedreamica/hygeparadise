@@ -1,23 +1,36 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"paths": {
+			"@public/*": ["./public/*"],
+			"@styles/*": ["./styles/*"],
+			"@Booking/*": ["./components/Booking/*"],
+			"@Button/*": ["./components/Button/*"],
+			"@CaraouselCircles/*": ["./components/CaraouselCircles/*"],
+			"@Container/*": ["./components/Container/*"],
+			"@Footer/*": ["./components/Footer/*"],
+			"@Form/*": ["./components/Form/*"],
+			"@Heading/*": ["./components/Heading/*"],
+			"@Home/*": ["./components/Home/*"],
+			"@Navbar/*": ["./components/Navbar/*"],
+			"@Room/*": ["./components/Room/*"],
+			"@RoomTypes/*": ["./components/RoomTypes/*"],
+			"@Social/*": ["./components/Social/*"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
 }
