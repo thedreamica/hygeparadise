@@ -7,23 +7,23 @@ import Container from "@Container/Container";
 import Navbar from "@Navbar/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
-	const router = useRouter();
+  const router = useRouter();
 
-	return (
-		<>
-			<Head>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-			</Head>
-			<>
-				<Navbar />
-				{router.pathname !== "/" ? (
-					<Container>
-						<Component {...pageProps} />
-					</Container>
-				) : (
-					<Component {...pageProps} />
-				)}
-			</>
-		</>
-	);
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <>
+        <Navbar />
+        {router.pathname !== "/" ? (
+          <Container>
+            <Component {...pageProps} />
+          </Container>
+        ) : (
+          <Component {...pageProps} />
+        )}
+      </>
+    </>
+  );
 }
