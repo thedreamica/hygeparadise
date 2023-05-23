@@ -62,7 +62,7 @@ export default function Booking() {
               <Input label="Your Email" type="email" />
               <Input label="Your Phone" />
             </div>
-            <TextArea label="Your message" />
+            <TextArea label="Your message" row={8} />
           </div>
           <Button
             className="text-center"

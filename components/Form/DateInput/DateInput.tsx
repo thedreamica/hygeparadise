@@ -1,4 +1,4 @@
-import type { MouseEventHandler, ChangeEventHandler, LegacyRef } from "react";
+import type { MouseEventHandler, ChangeEventHandler, LegacyRef, ChangeEvent, MouseEvent } from "react";
 import { forwardRef, useState } from "react";
 import DatePicker from "react-datepicker";
 import { ArrowDropDownCircle } from "@styled-icons/material/ArrowDropDownCircle";
@@ -19,11 +19,7 @@ export const DateInput = ({ label }: DateProps) => {
         value,
         onClick,
         onChange,
-      }: {
-        value: string | number | readonly string[] | undefined;
-        onClick: MouseEventHandler<HTMLInputElement>;
-        onChange: ChangeEventHandler<HTMLInputElement>;
-      },
+      }: any,
       ref: LegacyRef<HTMLInputElement>
     ) => (
       <div className="flex items-center">
@@ -42,6 +38,8 @@ export const DateInput = ({ label }: DateProps) => {
     )
   );
 
+  CustomInput.displayName = 'CustomInput'
+
   return (
     <div className="flex flex-col gap-2 text-center items-center h-[72px] w-full">
       <Heading variant="input-label">{label}</Heading>
@@ -50,7 +48,11 @@ export const DateInput = ({ label }: DateProps) => {
         selected={date}
         onChange={(date: Date) => setDate(date)}
         dateFormat="dd MMM"
-        customInput={<CustomInput />}
+        customInput={<CustomInput value={undefined} onClick={function (event: MouseEvent<HTMLInputElement, MouseEvent>): null {
+			throw new Error("Function not implemented.");
+		} } onChange={function (event: ChangeEvent<HTMLInputElement>): null {
+			throw new Error("Function not implemented.");
+		} } />}
         popperClassName="datePickerPopper"
         id={label}
       />

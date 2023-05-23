@@ -3,19 +3,19 @@ import { Circle } from "@styled-icons/entypo/Circle";
 import { Circle as CircleFilled } from "@styled-icons/fluentui-system-filled/Circle";
 import React from "react";
 
-interface CaraouselCirclesProps {
-  className?: string;
-  length: number;
-  active: number;
-  variant: string;
-}
+// interface CaraouselCirclesProps {
+//   className?: string;
+//   length: number;
+//   active: number;
+//   variant: string;
+// }
 
 const CaraouselCircles = ({
   className,
   length,
   active,
   variant,
-}: CaraouselCirclesProps) => {
+}: any) => {
   const circles = useMemo(() => {
     let circleIcons = [];
     for (let i = 0; i < length; i++) {
